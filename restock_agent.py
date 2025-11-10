@@ -209,7 +209,7 @@ class RestockAgent:
                 system_msg = SystemMessage(content=system_prompt)
                 full_messages = [system_msg] + messages
               
-                response = self.llm.ainvoke(full_messages)
+                response = self.llm.invoke(full_messages)
               
                 # Response text
               
